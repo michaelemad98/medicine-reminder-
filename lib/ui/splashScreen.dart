@@ -11,6 +11,7 @@ class _SplashScreenState extends State<SplashScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(children: [
+        Image(image: AssetImage('images/menwoman.png.png')),
         
       ],)
     );
