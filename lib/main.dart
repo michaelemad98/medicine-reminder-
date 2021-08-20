@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:medcinerminder/ui/splashScreen.dart';
+
+import 'ui/authScreens/loginScreen/loginScreen.dart';
 
 void main() {
   runApp(MyApp());
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home:SplashScreen(),
+      home:LoginScreen(),
     );
   }
 }

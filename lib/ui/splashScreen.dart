@@ -1,6 +1,6 @@
 
 import 'package:flutter/material.dart';
-import 'package:medcinerminder/components/reusable/buttonwidgets.dart';
+import 'package:medcinerminder/components/reusable/elevetedbutton.dart';
 import 'package:medcinerminder/constants/colors.dart';
 
 import 'authScreens/loginScreen/loginScreen.dart';
@@ -43,17 +43,8 @@ class _SplashScreenState extends State<SplashScreen> {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              DeafultButtonEvelete(onprimary:AppColors.defaultColor ,primary:AppColors.accentColor,Texts: 'Sign up',onpreased: (){
-                
-
-              },),
-               DeafultButtonEvelete(onprimary:AppColors.accentColor ,primary:AppColors.defaultColor,Texts: 'Login in',onpreased: (){
-                 Navigator.push(
-                        context,
-                        MaterialPageRoute(builder: (context) => LoginScreen()),
-                      );
-
-              },),
+              DefaultElevatedButton(onPrimary:AppColors.defaultColor ,primary:AppColors.accentColor,text: 'Sign up',onPressed: (){},minimumSizeX: 88,minimumSizeY:36,paddingHorizontal: 16,),
+              DefaultElevatedButton(onPrimary:AppColors.accentColor ,primary:AppColors.defaultColor,text: 'Login in',onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context) => LoginScreen()),);},minimumSizeX: 88,minimumSizeY:36,paddingHorizontal: 16,),
             ],
           )
           
