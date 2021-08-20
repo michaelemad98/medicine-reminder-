@@ -95,13 +95,26 @@ class LoginScreen extends StatelessWidget {
                       const SizedBox(
                         height: 10,
                       ),
+                      // Row(
+                      //   mainAxisSize: MainAxisSize.max,
+                      //   mainAxisAlignment: MainAxisAlignment.center,
+                      //   children: [
+                      //     Text('OR'),
+                      //   ],
+                      // ),
                       Row(
-                        mainAxisSize: MainAxisSize.max,
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Text('OR'),
-                        ],
-                      ),
+    children:[
+        Expanded(
+            child: Divider()
+        ),       
+
+        Text("OR"),        
+
+        Expanded(
+            child: Divider()
+        ),
+    ]
+),
                       const SizedBox(
                         height: 10,
                       ),
@@ -110,8 +123,8 @@ class LoginScreen extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                          CircleAvatar(child: Image.asset('images/google.png',fit: BoxFit.cover,height: 25,width: 25,),radius: 30,backgroundColor: Colors.white,),
-                         CircleAvatar(child: Image.asset('images/apple.png',fit: BoxFit.fill,height: 25,width: 25,),radius: 30,backgroundColor: Colors.white,),
                          CircleAvatar(child: Image.asset('images/facebook.png',fit: BoxFit.cover,height: 25,width: 25,),radius: 30,backgroundColor: Colors.white,),
+                          CircleAvatar(child: Image.asset('images/apple.png',fit: BoxFit.fill,height: 25,width: 25,),radius: 30,backgroundColor: Colors.white,),
                         ],
                       ),
                       Center(child: DefaultElevatedButton(onPressed: (){},text: 'Login',onPrimary: AppColors.whiteColor,primary: AppColors.defaultColor,paddingHorizontal: 25,minimumSizeX: 250,minimumSizeY: 30,)),
