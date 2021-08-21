@@ -43,8 +43,8 @@ class _SplashScreenState extends State<SplashScreen> {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              DefaultElevatedButton(onPrimary:AppColors.defaultColor ,primary:AppColors.accentColor,text: 'Sign up',onPressed: (){},minimumSizeX: 88,minimumSizeY:36,paddingHorizontal: 16,),
-              DefaultElevatedButton(onPrimary:AppColors.accentColor ,primary:AppColors.defaultColor,text: 'Login in',onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context) => LoginScreen()),);},minimumSizeX: 88,minimumSizeY:36,paddingHorizontal: 16,),
+              DefaultElevatedButton(onPrimary:AppColors.defaultColor ,primary:AppColors.accentColor,text: 'Sign up',onPressed: (){},minimumSizeX: 88,minimumSizeY:36,paddingHorizontal: 16,fontSize: 20,),
+              DefaultElevatedButton(onPrimary:AppColors.accentColor ,primary:AppColors.defaultColor,text: 'Login in',onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context) => LoginScreen()),);},minimumSizeX: 88,minimumSizeY:36,paddingHorizontal: 16,fontSize: 20,),
             ],
           )
           

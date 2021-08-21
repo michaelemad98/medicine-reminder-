@@ -9,11 +9,12 @@ class DefaultElevatedButton extends StatelessWidget {
     final double minimumSizeX;
     final double minimumSizeY;
     final double paddingHorizontal;
+    final double fontSize;
 
 
 
   const DefaultElevatedButton({
-    required this.onPrimary,required this.primary,required this.onPressed,required this.text,required this.minimumSizeX,required this.minimumSizeY,required this.paddingHorizontal});
+    required this.onPrimary,required this.primary,required this.onPressed,required this.text,required this.minimumSizeX,required this.minimumSizeY,required this.paddingHorizontal,required this.fontSize});
 
   @override
   Widget build(BuildContext context) {
@@ -28,6 +29,6 @@ class DefaultElevatedButton extends StatelessWidget {
      ),
         ) ,
         onPressed: onPressed,
-        child: Text(text));
+        child: Text(text,style: TextStyle(fontSize:fontSize),));
   }
 }

@@ -12,7 +12,7 @@ class LoginScreen extends StatelessWidget {
     return Scaffold(
       body: SafeArea(
         child: Column(
-          children: [
+          children:[
             Container(
               height: 150,
               decoration: BoxDecoration(
@@ -127,7 +127,7 @@ class LoginScreen extends StatelessWidget {
                           CircleAvatar(child: Image.asset('images/apple.png',fit: BoxFit.fill,height: 25,width: 25,),radius: 30,backgroundColor: Colors.white,),
                         ],
                       ),
-                      Center(child: DefaultElevatedButton(onPressed: (){},text: 'Login',onPrimary: AppColors.whiteColor,primary: AppColors.defaultColor,paddingHorizontal: 25,minimumSizeX: 250,minimumSizeY: 30,)),
+                      Center(child: DefaultElevatedButton(onPressed: (){},text: 'Login',onPrimary: AppColors.whiteColor,primary: AppColors.defaultColor,paddingHorizontal: 25,minimumSizeX: 250,minimumSizeY: 30,fontSize: 20,)),
                       const SizedBox(
                         height: 10,
                       ),
