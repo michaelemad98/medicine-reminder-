@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:medcinerminder/ui/add_medicine_Screen.dart';
+import 'package:medcinerminder/ui/editPageScrean.dart';
 
 void main() {
   runApp(MyApp());
@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home:AddMedicine(),
+      home:EditMedicine(),
     );
   }
 }
