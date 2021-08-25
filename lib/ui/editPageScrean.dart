@@ -154,7 +154,7 @@ class EditMedicine extends StatelessWidget {
                             ),
                           ],
                         ),
-                        SizedBox(height: 10,),
+                        Spacer(),
                         Center(child: DefaultElevatedButton(onPressed: (){},onPrimary: AppColors.whiteColor,primary: AppColors.defaultColor,paddingHorizontal: 100,minimumSizeX: 50,minimumSizeY: 40,text: 'Edit',fontSize: 15,)),
                       ],
                     ),
