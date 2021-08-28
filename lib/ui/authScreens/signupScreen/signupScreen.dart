@@ -72,10 +72,10 @@ class SignUpScreen extends StatelessWidget {
                         height: 20,
                       ),
                       DefaultTextField(
-                        hintText: 'Phone',
+                        hintText: 'Age',
                         hintTextFontSize: 15,
                         hintTextColor: AppColors.defaultColor,
-                        textInputType: TextInputType.phone,
+                        textInputType: TextInputType.number,
                       ),
                       const SizedBox(
                         height: 20,
