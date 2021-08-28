@@ -8,11 +8,13 @@ class DefaultTextField extends StatelessWidget {
   final double hintTextFontSize;
   final Icon ? prefixIcon;
   final Icon ? suffixIcon;
-  const DefaultTextField({Key? key , required this.hintText, this.fillColor,this.prefixIcon,this.suffixIcon,this.hintTextColor,required this.hintTextFontSize}) : super(key: key);
+  final TextInputType ? textInputType;
+  const DefaultTextField({Key? key , required this.hintText, this.fillColor,this.prefixIcon,this.suffixIcon,this.hintTextColor,required this.hintTextFontSize, this.textInputType}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return TextField(
+      keyboardType: textInputType,
       decoration: InputDecoration(
         hintStyle: TextStyle(color:hintTextColor ,fontSize: hintTextFontSize),
         hintText: hintText,
