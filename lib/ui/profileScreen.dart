@@ -19,7 +19,10 @@ class _ProfileScreenState extends State<ProfileScreen> {
         actions: [
           IconButton(
             onPressed: () {},
-            icon: Icon(Icons.create_rounded,color: AppColors.BlackColor,),
+            icon: Icon(
+              Icons.create_rounded,
+              color: AppColors.BlackColor,
+            ),
           ),
         ],
       ),
@@ -62,85 +65,95 @@ class _ProfileScreenState extends State<ProfileScreen> {
                   ],
                   borderRadius: BorderRadius.circular(15),
                 ),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  mainAxisAlignment: MainAxisAlignment.spaceAround,
-                  children: [
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                child: Padding(
+                    padding: const EdgeInsets.all(16.0),
+                    child: Row(
                       children: [
-                        Text(
-                          'Gander',
-                          style: TextStyle(
-                            fontFamily: 'Square721 BT',
-                            fontSize: 25,
-                            color: const Color(0xff01937c),
-                          ),
-                          textAlign: TextAlign.center,
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                         mainAxisAlignment: MainAxisAlignment.spaceAround, 
+                          children: [
+                            Text(
+                              'Gander',
+                              style: TextStyle(
+                                fontFamily: 'Square721 BT',
+                                fontSize: 18,
+                                fontWeight: FontWeight.w900,
+                                color: const Color(0xff01937c),
+                              ),
+                              textAlign: TextAlign.center,
+                            ),
+                            Text(
+                              'Age',
+                              style: TextStyle(
+                                fontFamily: 'Square721 BT',
+                                fontSize: 18,
+                                fontWeight: FontWeight.w900,
+                                color: const Color(0xff01937c),
+                              ),
+                              textAlign: TextAlign.center,
+                            ),
+                            Text(
+                              'Emali',
+                              style: TextStyle(
+                                fontFamily: 'Square721 BT',
+                                fontSize: 20,
+                                fontWeight: FontWeight.w900,
+                                color: const Color(0xff01937c),
+                              ),
+                              textAlign: TextAlign.center,
+                            )
+                          ],
                         ),
-                        Icon(
-                          Icons.male,
-                          color: AppColors.defaultColor,
+                        SizedBox(
+                          width: 16.0,
                         ),
-                        Text(
-                          'male',
-                          style: TextStyle(
-                            fontFamily: 'Square721 BT',
-                            fontSize: 20,
-                            color: const Color(0xff01937c),
-                          ),
-                          textAlign: TextAlign.center,
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          mainAxisAlignment: MainAxisAlignment.spaceAround,
+                          children: [
+                            Row(
+                              children: [
+                                Icon(
+                                  Icons.male,
+                                  color: AppColors.defaultColor,
+                                ),
+                                SizedBox(
+                                  width: 16.0,
+                                ),
+                                Text(
+                                  'male',
+                                  style: TextStyle(
+                                    fontFamily: 'Square721 BT',
+                                    fontSize: 18,
+                                    color: const Color(0xff01937c),
+                                  ),
+                                  textAlign: TextAlign.center,
+                                )
+                              ],
+                            ),
+                            Text(
+                              '30',
+                              style: TextStyle(
+                                fontFamily: 'Square721 BT',
+                                fontSize: 18,
+                                color: const Color(0xff01937c),
+                              ),
+                              textAlign: TextAlign.center,
+                            ),
+                            Text(
+                              'Michaelemad@gmail.com',
+                              style: TextStyle(
+                                fontFamily: 'Square721 BT',
+                                fontSize: 18,
+                                color: const Color(0xff01937c),
+                              ),
+                              textAlign: TextAlign.center,
+                            )
+                          ],
                         )
                       ],
-                    ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceAround,
-                      children: [
-                        Text(
-                          'Age',
-                          style: TextStyle(
-                            fontFamily: 'Square721 BT',
-                            fontSize: 25,
-                            color: const Color(0xff01937c),
-                          ),
-                          textAlign: TextAlign.center,
-                        ),
-                        Text(
-                          '30',
-                          style: TextStyle(
-                            fontFamily: 'Square721 BT',
-                            fontSize: 20,
-                            color: const Color(0xff01937c),
-                          ),
-                          textAlign: TextAlign.center,
-                        )
-                      ],
-                    ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceAround,
-                      children: [
-                        Text(
-                          'Emali',
-                          style: TextStyle(
-                            fontFamily: 'Square721 BT',
-                            fontSize: 25,
-                            color: const Color(0xff01937c),
-                          ),
-                          textAlign: TextAlign.center,
-                        ),
-                        Text(
-                          'Michaelemad@gmail.com',
-                          style: TextStyle(
-                            fontFamily: 'Square721 BT',
-                            fontSize: 20,
-                            color: const Color(0xff01937c),
-                          ),
-                          textAlign: TextAlign.center,
-                        )
-                      ],
-                    )
-                  ],
-                )),
+                    ))),
           ),
           SizedBox(
             height: 16.0,
