@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:medcinerminder/ui/profileScreen.dart';
+import 'package:medcinerminder/ui/splashScreen.dart';
 
 void main() {
   runApp(MyApp());
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home:ProfileScreen()
+      home:SplashScreen()
     );
   }
 }

@@ -1,6 +1,6 @@
 
 import 'package:flutter/material.dart';
-import 'package:medcinerminder/components/widgets/calender.dart';
+import 'package:medcinerminder/components/widgets/popUpOptionMenu.dart';
 import 'package:medcinerminder/constants/colors.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -33,13 +33,19 @@ class _HomeScreenState extends State<HomeScreen> {
                     children: [
                       Padding(
                         padding: const EdgeInsets.all(16.0),
-                        child: Text(
-                          'Welcome, Michael',
-                          style: TextStyle(
-                              fontFamily: 'Square721 BT',
-                              fontSize: 28,
-                              color: Colors.white),
-                          textAlign: TextAlign.left,
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceAround,
+                          children: [
+                            Text(
+                              'Welcome, Michael',
+                              style: TextStyle(
+                                  fontFamily: 'Square721 BT',
+                                  fontSize: 28,
+                                  color: Colors.white),
+                              textAlign: TextAlign.left,
+                            ),
+                            PopUpOptionMenu(),
+                          ],
                         ),
                       ),
                       Row(
@@ -164,7 +170,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           textAlign: TextAlign.left,
                         ),
                       ),
-                      CalenderWidget()
+                    //  CalenderWidget()
                      
                     ],
                   ),

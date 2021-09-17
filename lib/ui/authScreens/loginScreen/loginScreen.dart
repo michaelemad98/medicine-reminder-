@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:medcinerminder/components/reusable/elevetedbutton.dart';
 import 'package:medcinerminder/components/reusable/textfield.dart';
 import 'package:medcinerminder/constants/colors.dart';
+import 'package:medcinerminder/ui/Homepages/homeScreen.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({Key? key}) : super(key: key);
@@ -12,7 +13,7 @@ class LoginScreen extends StatelessWidget {
     return Scaffold(
       body: SafeArea(
         child: Column(
-          children:[
+          children: [
             Container(
               height: 150,
               decoration: BoxDecoration(
@@ -34,7 +35,6 @@ class LoginScreen extends StatelessWidget {
             Expanded(
               child: Container(
                 width: double.infinity,
-
                 decoration: BoxDecoration(
                     color: Colors.white,
                     boxShadow: [
@@ -102,19 +102,11 @@ class LoginScreen extends StatelessWidget {
                       //     Text('OR'),
                       //   ],
                       // ),
-                      Row(
-    children:[
-        Expanded(
-            child: Divider()
-        ),       
-
-        Text("OR"),        
-
-        Expanded(
-            child: Divider()
-        ),
-    ]
-),
+                      Row(children: [
+                        Expanded(child: Divider()),
+                        Text("OR"),
+                        Expanded(child: Divider()),
+                      ]),
                       const SizedBox(
                         height: 10,
                       ),
@@ -122,25 +114,70 @@ class LoginScreen extends StatelessWidget {
                         mainAxisSize: MainAxisSize.max,
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                         CircleAvatar(child: Image.asset('images/google.png',fit: BoxFit.cover,height: 25,width: 25,),radius: 30,backgroundColor: Colors.white,),
-                         CircleAvatar(child: Image.asset('images/facebook.png',fit: BoxFit.cover,height: 25,width: 25,),radius: 30,backgroundColor: Colors.white,),
-                          CircleAvatar(child: Image.asset('images/apple.png',fit: BoxFit.fill,height: 25,width: 25,),radius: 30,backgroundColor: Colors.white,),
+                          CircleAvatar(
+                            child: Image.asset(
+                              'images/google.png',
+                              fit: BoxFit.cover,
+                              height: 25,
+                              width: 25,
+                            ),
+                            radius: 30,
+                            backgroundColor: Colors.white,
+                          ),
+                          CircleAvatar(
+                            child: Image.asset(
+                              'images/facebook.png',
+                              fit: BoxFit.cover,
+                              height: 25,
+                              width: 25,
+                            ),
+                            radius: 30,
+                            backgroundColor: Colors.white,
+                          ),
+                          CircleAvatar(
+                            child: Image.asset(
+                              'images/apple.png',
+                              fit: BoxFit.fill,
+                              height: 25,
+                              width: 25,
+                            ),
+                            radius: 30,
+                            backgroundColor: Colors.white,
+                          ),
                         ],
                       ),
-                      Center(child: DefaultElevatedButton(onPressed: (){},text: 'Login',onPrimary: AppColors.whiteColor,primary: AppColors.defaultColor,paddingHorizontal: 25,minimumSizeX: 250,minimumSizeY: 30,fontSize: 20,)),
+                      Center(
+                          child: DefaultElevatedButton(
+                        onPressed: () {
+                           Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => HomeScreen()),
+                    );
+                        },
+                        text: 'Login',
+                        onPrimary: AppColors.whiteColor,
+                        primary: AppColors.defaultColor,
+                        paddingHorizontal: 25,
+                        minimumSizeX: 250,
+                        minimumSizeY: 30,
+                        fontSize: 20,
+                      )),
                       const SizedBox(
                         height: 10,
                       ),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                        Text('Don\'t have an account ?'),
-                        const SizedBox(
-                          width: 10,
-                        ),
-                        Text('Sign Up',style: TextStyle(color: AppColors.defaultColor),),
-
-                      ],),
+                          Text('Don\'t have an account ?'),
+                          const SizedBox(
+                            width: 10,
+                          ),
+                          Text(
+                            'Sign Up',
+                            style: TextStyle(color: AppColors.defaultColor),
+                          ),
+                        ],
+                      ),
                     ],
                   ),
                 ),
